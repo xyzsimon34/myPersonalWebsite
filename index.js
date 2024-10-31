@@ -1,4 +1,4 @@
-//在 index.js 中配置 Express 伺服器，並讓它渲染 index.ejs 頁面。
+//在 index.js 中配置 Express 伺服器，並讓它render index.ejs 頁面。
 
 import express from 'express';
 import expressLayouts from 'express-ejs-layouts';
@@ -35,16 +35,16 @@ app.get('/projects', (req, res) => res.render('projects'));
 app.get('/contact', (req, res) => res.render('contact'));
 
 
-// blog 相關路由
-app.get('/blog',(req,res)=>{
-    res.render('blog',{ posts }) //  views/blog.ejs 作為部落格頁面
+// guestbook 相關路由
+app.get('/guestbook',(req,res)=>{
+    res.render('guestbook',{ posts })
 });
 
-app.get('/blog/new', (req, res) => {
+app.get('/guestbook/new', (req, res) => {
     res.render('create'); 
 });
 
-app.post('/blog/new', (req, res) => {
+app.post('/guestbook/new', (req, res) => {
     const { title, content } = req.body;
     const newPost = {
         title,
@@ -52,7 +52,7 @@ app.post('/blog/new', (req, res) => {
         date: new Date().toLocaleString() // 取得當前時間
     };
     posts.push(newPost);
-    res.redirect('/blog');
+    res.redirect('/guestbook');
 });
 
 

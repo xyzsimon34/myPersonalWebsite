@@ -1,0 +1,123 @@
+/* 基本設置 */
+body {
+    background-color: #1a1a1a; /* 深色背景 */
+    color: #ffffff; /* 白色文字 */
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1, h2 {
+    color: #00e676; /* Web3 風格的綠色標題 */
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+h3, h4 {
+    color: #00bcd4; /* 略淺的藍色次要標題 */
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
+}
+
+/* 部分區域標題 */
+.Blog-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(0, 230, 118, 0.8); /* 增加標題光暈 */
+}
+
+/* 文章卡片 */
+.post-card {
+    background-color: #212529; /* 深色背景 */
+    border: 2px solid #00e676; /* 綠色邊框 */
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 230, 118, 0.4); /* 綠色光暈陰影 */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.post-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 230, 118, 0.6); /* 懸浮時加強陰影 */
+}
+
+.post-card h3 {
+    color: #00e676; /* 綠色標題 */
+    text-shadow: 0 0 8px rgba(0, 230, 118, 0.8);
+}
+
+.post-card p {
+    color: #b0b0b0; /* 輕灰色文字 */
+}
+/* 提示訊息區塊 */
+.no-posts-message {
+    background-color: #333333; /* 深灰背景 */
+    color: #00e676; /* Web3 綠色文字 */
+    padding: 1rem 1.5rem;
+    border: 2px solid #00e676; /* 綠色邊框 */
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 230, 118, 0.4); /* 微光陰影 */
+    transition: transform 0.3s ease-in-out;
+}
+
+.no-posts-message a {
+    color: #00bcd4; /* 藍色文字 */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.no-posts-message:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 230, 118, 0.6); /* 更強的懸浮陰影 */
+}
+
+
+/* 按鈕設計 */
+.custom-btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.custom-btn.btn-warning {
+    background-color: #212529; /* 按鈕深色背景 */
+    color: #00e676; /* Web3 綠色文字 */
+    border: 2px solid #00e676; /* 綠色邊框 */
+}
+
+.custom-btn.btn-warning:hover {
+    background-color: #00e676; /* 懸浮時背景變為綠色 */
+    color: #212529; /* 文字變為深色 */
+}
+
+/* 連結樣式 */
+a {
+    color: #00e676;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00bcd4;
+    text-decoration: underline;
+}
+
+/* 分隔線 */
+.b-example-divider {
+    height: 3px;
+    background-color: #00e676;
+    margin: 2rem 0;
+}
+
+/* Navbar 樣式 */
+header nav a {
+    color: #ffffff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #00e676;
+    text-decoration: underline;
+}

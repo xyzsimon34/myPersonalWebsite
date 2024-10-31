@@ -1,0 +1,80 @@
+/* 網頁背景和文字樣式 */
+body {
+    background-color: #1a1a1a; /* 深色背景 */
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* 標題樣式 */
+h2 {
+    color: #00e676;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px rgba(0, 230, 118, 0.8);
+}
+
+/* 表單樣式 */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #2a2a2a;
+    border: 2px solid #00e676;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 230, 118, 0.3);
+}
+
+/* 表單標籤 */
+form label {
+    display: block;
+    margin-top: 1rem;
+    color: #00bcd4;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* 表單輸入框 */
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #1f1f1f;
+    border: 2px solid #00e676;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
+/* 表單按鈕 */
+form button[type="submit"] {
+    background-color: #00e676;
+    color: #1a1a1a;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #00bcd4;
+    transform: translateY(-3px);
+}
+
+form button[type="submit"]:active {
+    transform: translateY(1px);
+}

@@ -1,0 +1,251 @@
+body {
+  background-color: #1a1a1a; 
+  color: #ffffff; 
+  font-family: 'Orbitron', sans-serif; 
+}
+
+header nav a {
+  color: #ffffff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #00e676;
+  text-decoration: underline;
+}
+
+
+.nav-link:hover {
+  color: #00e676 !important;
+  text-decoration: underline;
+}
+
+
+/* 標題樣式 */
+h1, h2 {
+  color: #00e676; 
+  text-transform: uppercase; 
+  letter-spacing: 0.1rem;
+}
+
+.Hero-section h1,
+.About-section h1 {
+    color: #00bcd4; 
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.8); 
+}
+
+.web3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  background: linear-gradient(90deg, #030107, #000);
+  background-clip: text;
+  -webkit-background-clip: text; /* For Chrome and Safari */
+  color: transparent;
+  position: relative;
+}
+
+
+.web3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #00ff80, #9dff00);
+  filter: blur(8px);
+  z-index: -1;
+  opacity: 0.75;
+}
+
+.Hero-section p.lead,
+.About-section p.lead {
+    color: #eeeeee; /* 淡灰色，適合暗色背景 */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;}
+
+.About-section h1 {
+    margin-top: 20px;
+    font-size: 2.5rem; /* 稍微縮小，讓版面更協調 */
+}
+
+.About-section .custom-img {
+  width: 100%;  /* 保持圖片全寬 */
+  max-width: 500px;  /* 設置最大寬度為500px */
+  height: auto;  /* 自動調整高度以保持比例 */
+  display: block;  /* 圖片以區塊形式展示 */
+  margin: 0 auto;  /* 圖片居中 */
+  border-radius: 15px;  /* 圓角樣式，讓圖片更柔和 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* 添加淡淡的陰影效果 */
+}
+
+/* Hero按鈕 */
+.Hero-section .custom-btn.btn-warning {
+    border-color: #007bff; /* 邊框同藍色 */
+    color: white; /* 白色文字 */
+}
+
+.Hero-section .custom-btn.btn-warning:hover {
+    background-color: #00bcd4; /* 懸浮時變為亮藍色 */
+    color: #ffffff; /* 保持白色文字 */
+}
+
+/* 按鈕樣式 */
+.custom-btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn.btn-warning {
+  background-color: #212529; /* 深色背景 */
+  color: #00e676; /* 綠色文字 */
+  border: 2px solid #00e676; /* 綠色邊框 */
+}
+
+.custom-btn.btn-warning:hover {
+  background-color: #00e676; /* 懸浮時背景變為綠色 */
+  color: #212529; /* 文字變為深色 */
+}
+
+.custom-btn.btn-outline-secondary {
+  border-color: #00e676;
+  color: #00e676;
+}
+
+.custom-btn.btn-outline-secondary:hover {
+  background-color: #00e676;
+  color: #212529;
+}
+
+/* 圖片樣式 */
+.custom-img {
+  max-width: 100px; /* 調整大小 */
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-img:hover {
+  transform: scale(1.1); /* 懸浮時放大圖片 */
+}
+
+/* 卡片樣式 */
+.card {
+  border: none; /* 移除邊框 */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* 懸浮效果 */
+  box-shadow: 0 8px 20px rgba(0, 230, 118, 0.6); /* 綠色光暈 */
+}
+
+.card h3 {
+  color: #00e676; /* 綠色標題 */
+  text-shadow: 0 0 10px rgba(0, 230, 118, 0.8); /* 增加文字陰影 */
+}
+
+.card button {
+  background-color: #212529; /* 按鈕深色背景 */
+  color: #00e676; /* 綠色文字 */
+  border: 2px solid #00e676;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #00e676;
+  color: #212529;
+}
+
+/* 調整卡片內部元素位置 */
+.card .d-flex {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-cover {
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.card-cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6); /* 半透明的黑色遮罩 */
+  z-index: 1;
+}
+
+.card-cover .text-shadow-1 {
+  z-index: 2;
+}
+
+
+
+.Contact-section {
+  background-color: #1f1f1f; /* 深灰色背景 */
+  padding: 50px 0; /* 上下內邊距 */
+  border-top: 5px solid #ffc107; /* 上方邊框 */
+}
+
+.Contact-section h2 {
+  color: #e0e0e0; /* 淺灰色文字 */
+  margin-bottom: 20px; /* 標題底部間距 */
+  text-shadow: 0 0 10px rgba(0, 188, 212, 0.8); 
+  
+}
+
+.Contact-section .lead {
+  color: #b0b0b0; /* 更柔和的引導文字顏色 */
+}
+
+.Contact-section .btn {
+  border-radius: 50px; /* 按鈕圓角 */
+  transition: all 0.3s ease; /* 全部屬性的過渡效果 */
+  font-size: 1.1rem; /* 字體大小 */
+  padding: 10px 20px; /* 按鈕內邊距 */
+}
+
+.Contact-section .btn-warning {
+  background-color: #ffca28; /* 按鈕背景色 */
+  color: #000; /* 按鈕文字顏色 */
+  box-shadow: 0 4px 8px rgba(255, 202, 40, 0.3); /* 陰影效果 */
+}
+
+.Contact-section .btn-warning:hover {
+  background-color: #ffc107; /* 懸停顏色 */
+}
+
+.Contact-section .btn-info {
+  background-color: #17a2b8; /* 藍色按鈕背景 */
+  color: #fff; /* 按鈕文字顏色 */
+  box-shadow: 0 4px 8px rgba(23, 162, 184, 0.3);
+}
+
+.Contact-section .btn-info:hover {
+  background-color: #138496; /* 懸停顏色 */
+}
+
+.Contact-section .btn-outline-secondary {
+  color: #6c757d; /* 按鈕文字顏色 */
+  border: 2px solid #6c757d; /* 按鈕邊框顏色 */
+  transition: background-color 0.3s, color 0.3s; /* 背景顏色和文字顏色的過渡效果 */
+}
+
+.Contact-section .btn-outline-secondary:hover {
+  background-color: #6c757d; /* 懸停背景顏色 */
+  color: #fff; /* 懸停文字顏色 */
+}
+
+
+/* 分隔線 */
+.b-example-divider {
+  height: 3px;
+  background-color: #00e676; 
+  margin: 2rem 0;
+}
